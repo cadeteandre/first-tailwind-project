@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bon Hotel - Welcome</title>
+</head>
+<body>
+    <header class="flex flex-col items-center p-8 gap-y-8">
+        <img src="./assets/images/logo_header.png" alt="logo" class="w-32">
+        <nav class="flex gap-x-8 text-yellow-700">
+            <a class="cursor-pointer" href="#">Our Hotel</a>
+            <a class="cursor-pointer" href="#">Rooms & Rates</a>
+            <a class="cursor-pointer" href="#">Facilities</a>
+            <a class="cursor-pointer" href="#">Contact Us</a>
+            <img src="./assets/images/bi_search.png" alt="search-icon" class="w-4 h-4 cursor-pointer top-3">
+        </nav>
+    </header>
+    <main class="flex flex-col items-center">
+        <section class="section__welcome flex flex-col items-center pt-40 gap-y-4 text-white justify-center bg-[url('./assets/images/hero_image.png')] h-96 bg-cover bg-center w-full">
+            <h1 class="text-5xl text-center">WELCOME TO BON HOTEL</h1>
+            <p>
+                Good people. Good thinking. Good feeling.
+            </p>
+            <button class="cursor-pointer bg-amber-400 p-2 w-56 rounded-md">EXPLORE</button>
+        </section>
+        <section class="section__facilities flex flex-col gap-y-8 p-8">
+            <h2 class="text-center text-yellow-700 text-2xl">Facilities</h2>
+            <div class="Facilities__services flex gap-x-16 text-center">
+                <div class="service">
+                    <img src="./assets/images/icon_kitchen.png" alt="kitchen-icon" class="w-14">
+                    <p class="my-2">Kitchen</p>
+                </div>
+                <div class="service">
+                    <img src="./assets/images/icon_pool.png" alt="pool-icon" class="w-14">
+                    <p class="my-2">Pool</p>
+                </div>
+                <div class="service">
+                    <img src="./assets/images/icon_wifi.png" alt="wifi-icon" class="w-14">
+                    <p class="my-2">Wifi</p>
+                </div>
+                <div class="service">
+                    <img src="./assets/images/icon_fitness.png" alt="gym-icon" class="w-14">
+                    <p class="my-2">Gym</p>
+                </div>
+                <div class="service">
+                    <img src="./assets/images/icon_taxi.png" alt="taxi-icon" class="w-14">
+                    <p class="my-2">Taxi</p>
+                </div>
+            </div>
+        </section>
+        <section class="section__rooms__rates text-center text-white w-full px-10 flex flex-col gap-y-10">
+            <h2 class="text-center text-yellow-700 text-2xl">Room & Rates</h2>
+            <div class="flex gap-x-10">
+                <article class="pt-40 rounded-md bg-center w-1/2 bg-[url('./assets/images/standard_twin_room.png')] h-64 bg-cover w-full">
+                    <h3 class="text-xl">Standard Twin Room</h3>
+                    <button class="cursor-pointer mt-2 bg-amber-400 py-2 px-4 w-38 text-sm rounded-md">Check Rates</button>
+                </article>
+                <article class="pt-40 rounded-md bg-center bg-[url('./assets/images/standard_room.png')] h-64 bg-cover w-full">
+                    <h3 class="text-xl">Standard Room</h3>
+                    <button class="cursor-pointer mt-2 bg-amber-400 py-2 px-4 w-38 text-sm rounded-md">Check Rates</button>
+                </article>
+            </div>
+            <div class="flex gap-x-10">
+                <article class="pt-40 rounded-md bg-center bg-[url('./assets/images/standard_view_room.png')] h-64 bg-cover w-full">
+                    <h3 class="text-xl">Standard View Room</h3>
+                    <button class="cursor-pointer mt-2 bg-amber-400 py-2 px-4 w-38 text-sm rounded-md">Check Rates</button>
+                </article>
+                <article class="pt-40 rounded-md bg-center bg-[url('./assets/images/deluxe_room.png')] h-64 bg-cover w-full">
+                    <h3 class="text-xl">Deluxe Room</h3>
+                    <button class="cursor-pointer mt-2 bg-amber-400 py-2 px-4 w-38 text-sm rounded-md">Check Rates</button>
+                </article>
+            </div>
+        </section>
+        <section class="section__get__room flex flex-col gap-y-10 p-16">
+            <h2 class="text-center text-yellow-700 text-2xl">Get a room already!</h2>
+            <button class="cursor-pointer text-white bg-amber-400 p-2 w-56 rounded-md">Book Now</button>
+        </section>
+    </main>
+    <footer class="flex bg-black text-white items-center justify-between pt-8 pb-10 px-8">
+        <div>
+            <img src="./assets/images/logo_footer.png" alt="logo-footer" class="w-16 pb-10">
+            <p class="text-xs">Bon Hotels Head Office</p>
+            <p class="text-xs">+27 434 344 432</p>
+            <p class="text-xs">info@bonhotels.com</p>
+        </div>
+        <div>
+            <nav class="flex flex-col gap-y-2">
+                <a class="text-xs" href="#">Our Hotels</a>
+                <a class="text-xs" href="#">Our Conferencing</a>
+                <a class="text-xs" class="text-sm"href="#">Our Company</a>
+                <a class="text-xs" href="#">Hotel Design</a>
+                <a class="text-xs" href="#">Careers</a>
+            </nav>
+        </div>
+        <div>
+            <form action="" class="flex flex-col gap-y-2">
+                <label for="email">Subcribe for Offers</label>
+                <input type="email" name="email" id="email" placeholder="Email Address" class="w-48 rounded-md p-2">
+                <button class="text-white bg-amber-400 p-2 w-48 rounded-md text-sm">Subscribe Now</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
